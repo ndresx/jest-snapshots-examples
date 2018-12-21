@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="calculator"
+>
+  <h1>
+    Calculator
+  </h1>
+  <div>
+    <label
+      htmlFor="input-1"
+    >
+      Input 1:
+    </label>
+    <input
+      id="input-1"
+      onChange={[Function]}
+      placeholder="Input 1"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      htmlFor="input-2"
+    >
+      Input 2:
+    </label>
+    <input
+      id="input-2"
+      onChange={[Function]}
+      placeholder="Input 2"
+      value=""
+    />
+  </div>
+  <div
+    id="output"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Add
+  </button>
+  <Button
+    onClick={[Function]}
+  >
+    Reset
+  </Button>
+</div>
+`;
+
+exports[`should render error message if input is not valid 1`] = `"<div class=\\"calculator\\"><h1>Calculator</h1><div><label for=\\"input-1\\">Input 1:</label><input id=\\"input-1\\" placeholder=\\"Input 1\\" value=\\"\\"/></div><div><label for=\\"input-2\\">Input 2:</label><input id=\\"input-2\\" placeholder=\\"Input 2\\" value=\\"\\"/></div><div id=\\"output\\">Please verify your input!</div><button>Add</button><button>Reset</button></div>"`;
+
+exports[`should render error message if input is not valid 2`] = `"Please verify your input!"`;
+
+exports[`should return 4 when calculating 1 + 3 1`] = `4`;
