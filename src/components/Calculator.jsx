@@ -5,7 +5,11 @@ export function sum(a, b) {
 }
 
 // Custom button component
-const Button = ({ onClick, children }) => <button onClick={onClick}>{children}</button>;
+const Button = ({ onClick, children }) => (
+  <button className="custom-button" onClick={onClick}>
+    {children}
+  </button>
+);
 
 const defaultState = { input1: '', input2: '', output: null };
 
